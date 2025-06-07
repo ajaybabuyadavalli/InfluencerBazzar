@@ -39,7 +39,7 @@ import {
   Clock,
   Star,
   Bookmark,
-  BookmarkCheck,
+  Check,
   ExternalLink,
   CheckCircle,
   AlertCircle,
@@ -727,7 +727,10 @@ const DiscoverCampaigns = () => {
                         }}
                       >
                         {isSaved ? (
-                          <BookmarkCheck className="w-4 h-4 text-yellow-400" />
+                          <div className="relative">
+                            <Bookmark className="w-4 h-4 text-yellow-400 fill-current" />
+                            <Check className="w-2 h-2 text-white absolute top-0 left-1" />
+                          </div>
                         ) : (
                           <Bookmark className="w-4 h-4 text-white" />
                         )}

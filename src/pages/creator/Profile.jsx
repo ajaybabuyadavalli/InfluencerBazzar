@@ -58,7 +58,7 @@ import {
   Phone,
   Copy,
   Check,
-  Sync,
+  RefreshCw,
   Filter,
   Grid,
   List,

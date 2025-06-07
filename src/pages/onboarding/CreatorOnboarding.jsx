@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
   ArrowLeft,
-  Skip,
+  SkipForward,
   Upload,
   User,
   MapPin,
@@ -197,7 +197,7 @@ export default function CreatorOnboarding() {
                 onClick={handleSkip}
                 className="flex items-center space-x-2 px-4 py-2 text-gray-400 hover:text-white transition-colors"
               >
-                <Skip className="h-4 w-4" />
+                <SkipForward className="h-4 w-4" />
                 <span>Skip</span>
               </button>
             )}

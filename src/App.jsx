@@ -18,6 +18,9 @@ import CreatorOnboarding from "./pages/onboarding/CreatorOnboarding";
 import BrandOnboarding from "./pages/onboarding/BrandOnboarding";
 import AgencyOnboarding from "./pages/onboarding/AgencyOnboarding";
 
+// Dashboard pages
+import CreatorDashboard from "./pages/dashboards/CreatorDashboard";
+
 function App() {
   return (
     <Router>
@@ -32,6 +35,39 @@ function App() {
           <Route path="/onboarding/creator" element={<CreatorOnboarding />} />
           <Route path="/onboarding/brand" element={<BrandOnboarding />} />
           <Route path="/onboarding/agency" element={<AgencyOnboarding />} />
+
+          {/* Dashboard Routes (No Navbar/Footer) */}
+          <Route path="/creator/dashboard" element={<CreatorDashboard />} />
+          <Route
+            path="/brand/dashboard"
+            element={
+              <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-100 dark:from-purple-900 dark:to-indigo-900">
+                <div className="text-center">
+                  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Brand Dashboard
+                  </h1>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Coming soon...
+                  </p>
+                </div>
+              </div>
+            }
+          />
+          <Route
+            path="/agency/dashboard"
+            element={
+              <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-red-100 dark:from-orange-900 dark:to-red-900">
+                <div className="text-center">
+                  <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Agency Dashboard
+                  </h1>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Coming soon...
+                  </p>
+                </div>
+              </div>
+            }
+          />
 
           {/* Main App Routes (With Navbar/Footer) */}
           <Route

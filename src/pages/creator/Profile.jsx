@@ -699,7 +699,7 @@ const CreatorProfile = () => {
                     <PrimaryButton
                       onClick={() => syncPlatformContent("all")}
                       icon={
-                        <Sync
+                        <RefreshCw
                           className={`w-4 h-4 ${isSyncing ? "animate-spin" : ""}`}
                         />
                       }
